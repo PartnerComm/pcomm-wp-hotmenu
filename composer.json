@@ -1,0 +1,19 @@
+{
+  "name": "pcomm/wp-hotmenu",
+  "version": "1.0.0",
+  "description": "PComm HotMenu",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "Partnercomm.net",
+      "email": "code@partnercomm.net"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "PComm\\WP\\Plugins\\HotMenu": "./"
+    }
+  }
+}

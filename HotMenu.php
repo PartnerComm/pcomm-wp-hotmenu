@@ -2,7 +2,7 @@
 /*
 Plugin Name: PartnerComm HotMenu
 Description: Add Quick Hot Menus Based On Taxonomy and Term Pairs
-Version: 1.0.0
+Version: 1.0.1
 Author: Phil Palmieri
 Author Email: ppalmieri@partnercomm.net
 Text Domain: partnercomm-hotmenu

@@ -14,7 +14,7 @@ Build Menu Links Based on Matched Taxonomies
 ```
 2) From within your post or body add the following shortcode
 ```text
-  [hotmenu taxonomy="term" base-link='/other/page/to/link/to']
+  [hotmenu taxonomy="term" base-link='/other/page/to/link/to' ul-class="someclass for designer"]
 ```
 _You can add multiple taxonomy/term combination, and they will be exclusionary_
 ```text

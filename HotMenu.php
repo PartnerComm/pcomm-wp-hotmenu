@@ -2,7 +2,7 @@
 /*
 Plugin Name: PartnerComm HotMenu
 Description: Add Quick Hot Menus Based On Taxonomy and Term Pairs
-Version: 1.0.1
+Version: 1.0.2
 Author: Phil Palmieri
 Author Email: ppalmieri@partnercomm.net
 Text Domain: partnercomm-hotmenu
@@ -44,7 +44,8 @@ class HotMenu {
 
     $the_query = new \WP_Query( ['tax_query' => $taxMatches] );
     $baseLink = (!empty($atts['base-link'])) ? $atts['base-link'] : '';
-    $menu = "<nav class='hotmenu'><ul>";
+    $ulClass = (!empty($atts['ul-class'])) ? $atts['ul-class'] : '';
+    $menu = "<nav class='hotmenu'><ul class='{$ulClass}'>";
     while ( $the_query->have_posts() ) : 
       $the_query->the_post();
       $slug = get_post_field( 'post_name', get_post() );

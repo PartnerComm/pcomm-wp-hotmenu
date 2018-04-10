@@ -2,7 +2,7 @@
 /*
 Plugin Name: PartnerComm HotMenu
 Description: Add Quick Hot Menus Based On Taxonomy and Term Pairs
-Version: 1.1.1
+Version: 1.1.2
 Author: Phil Palmieri
 Author Email: ppalmieri@partnercomm.net
 Text Domain: partnercomm-hotmenu
@@ -51,6 +51,7 @@ class HotMenu {
     $baseLink = (!empty($atts['base-link'])) ? $atts['base-link'] : '';
     $ulClass = (!empty($atts['ul-class'])) ? $atts['ul-class'] : '';
     $order_by = (!empty($atts['order-by'])) ? $atts['order-by'] : '';
+    $query_params['order'] = (!empty($atts['order']) && strtoupper($atts['order'] == 'ASC')) ? 'ASC' : 'DESC';
 
     if($order_by != ''){
       $query_params['orderby'] = $order_by;

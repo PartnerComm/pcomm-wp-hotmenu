@@ -28,6 +28,7 @@ class HotMenu {
   public function init()
   {
     add_shortcode( 'hotmenu', [$this, 'doShortcode'] );
+    return $this;
   }
 
   public function doShortcode($atts)
@@ -50,6 +51,8 @@ class HotMenu {
     // Get attributes
     $baseLink = (!empty($atts['base-link'])) ? $atts['base-link'] : '';
     $ulClass = (!empty($atts['ul-class'])) ? $atts['ul-class'] : '';
+
+    // Build Query Params
     $order_by = (!empty($atts['order-by'])) ? $atts['order-by'] : '';
     $query_params['order'] = (!empty($atts['order']) && strtoupper($atts['order'] == 'ASC')) ? 'ASC' : 'DESC';
 
